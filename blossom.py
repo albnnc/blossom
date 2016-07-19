@@ -97,5 +97,8 @@ if args.link:
     for k, v in link.items():
         try:
             link_paths(k, v, args.force)
-        except:
-            print('failed to create symlink:', k, '<-', v)
+        except FileExistsError:
+            print('failed to create symbolic link: file exists')
+        except FileNotFoundError:
+            print('failed to create symbolic link: not a directory')
+
