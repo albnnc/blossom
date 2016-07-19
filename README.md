@@ -2,7 +2,7 @@
     <img src="https://raw.githubusercontent.com/alexquot/blossom/master/blossom.png"/>
 </p>
 
-*Let your files blossom*
+*Let dotfiles blossom*
 
 ## What Is This?
 
