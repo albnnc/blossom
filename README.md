@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/alexquot/blossom/master/blossom.png"/>
+    <img width="200" src="https://raw.githubusercontent.com/alexquot/blossom/master/blossom.png"/>
 </p>
 
 *Let your files blossom*
