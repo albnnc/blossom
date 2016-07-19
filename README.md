@@ -2,7 +2,9 @@
     <img src="https://raw.githubusercontent.com/alexquot/blossom/master/blossom.png"/>
 </p>
 
-*Let dotfiles blossom*
+*Let your files blossom*
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2e8c82eeed594cdd844db0eca0ea2557)](https://www.codacy.com/app/alexquot/blossom?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=alexquot/blossom&amp;utm_campaign=Badge_Grade)
 
 ## What Is This?
 
@@ -14,7 +16,7 @@ come. With them you can organize files as you want.
 
 Blossom is a single-file script which allows you to clean up directories
 and install files by creating symbolic links. It's easy as `git clone $repo
-&& cd dotfiles && python blossom.py -l`. Most likely you are going to use it
+&& cd dotfiles && python blossom.py`. Most likely you are going to use it
 to install your dotfiles; actually, there is no difference to Blossom which
 files to perform with. The main goals of this project are:
 
