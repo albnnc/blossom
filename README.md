@@ -14,9 +14,9 @@ come. With them you can organize files as you want.
 
 Blossom is a single-file script which allows you to clean up directories
 and install files by creating symbolic links. It's easy as `git clone $repo
-&& cd dotfiles && python blossom.py`. Most likely you are going to use it to
-install your dotfiles; actually, there is no difference to Blossom which files
-to perform with. The main goals of this project are:
+&& cd dotfiles && python blossom.py -l`. Most likely you are going to use it
+to install your dotfiles; actually, there is no difference to Blossom which
+files to perform with. The main goals of this project are:
 
 * provide a tool which does its own job good;
 * maximize simplicity of the code and usage;
@@ -34,12 +34,12 @@ In this file you can specify script's behaviour: what directories should be
 cleaned up and how exectly to link your configs. This file has to be in
 the dotfiles directory (by default, *~/dotfiles*) and named **blossom.cfg**.
 
-Config has simple structure divided into two sections: `[clean]` and `[link]`.
-First one should contain a list of the directories to clean up (absolute path),
-one per line. Each chosen directory will be cleaned from all symbolic links.
-Second section has to list symlinks &mdash; targets (relative to dotfiles)
-and destinations (absolute). You can read more about the allowed syntax on
-python's configparser module
+Config has simple structure divided into two sections: `[clean]` and
+`[link]`. First one should contain a list of the directories to clean up
+(absolute path), one per line. Each chosen directory will be cleaned from
+all symbolic links. Second section has to list symlinks &mdash; targets
+(relative to dotfiles) and destinations (absolute). You can read more
+about the allowed syntax on python's configparser module
 [documentation](https://docs.python.org/3/library/configparser.html).
 
 Example blossom.cfg:
@@ -79,9 +79,9 @@ In this situation the most common are those cases:
 manually or just add the `--force` flag.
 
 * You're trying to put a symbolic link in the nonexistent directory.
-For example, you may want Blossom to place your *~/dotfiles/compton* folder to
-*~/.config*, but the second directory doesn't exist. The only workaround
-is just to create this folder manually.
+For example, you may want Blossom to place your *~/dotfiles/compton*
+folder to *~/.config*, but the second directory doesn't exist. The only
+workaround is just to create this folder manually.
 
 ##### Script execution does nothing!
 
