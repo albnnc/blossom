@@ -16,9 +16,9 @@ come. With them you can organize files as you want.
 
 Blossom is a single-file script which allows you to clean up directories
 and install files by creating symbolic links. It's easy as `git clone $repo
-&& cd dotfiles && python blossom.py`. Most likely you are going to use it
-to install your dotfiles; actually, there is no difference to Blossom which
-files to perform with. The main goals of this project are:
+&& cd dotfiles && python blossom.py -l`. Most likely you are going to use
+it to install your dotfiles; actually, there is no difference to Blossom
+which files to perform with. The main goals of this project are:
 
 * provide a tool which does its own job good;
 * maximize simplicity of the code and usage;
