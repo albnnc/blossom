@@ -74,11 +74,11 @@ link = {
 # MAIN ACTIVITY
 #
 
-def clean_dir(dir):
-    if not os.path.isdir(dir):
+def clean_path(path):
+    if not os.path.isdir(path):
         return
-    for i in os.listdir(dir):
-        i = os.path.join(dir, i)
+    for i in os.listdir(path):
+        i = os.path.join(path, i)
         if os.path.islink(i):
             os.remove(i)
 
@@ -92,7 +92,7 @@ def link_paths(a, b, isForce):
 
 if args.clean:
     for i in clean:
-        clean_dir(i)
+        clean_path(i)
 if args.link:
     for k, v in link.items():
         try:
